@@ -10,7 +10,7 @@ The project is broken down into sequential Jupyter Notebooks, analytical tools, 
 
 4. Threshold Test.ipynb: Analyzes Cross-Encoder confidence distributions to justify the optimal fallback threshold used in the hybrid pipeline.
 
-5. LLM visualisation.ipynb: Generates figures, confusion matrices, class-level F1 distributions, and cost-accuracy trade-off graphs (saved to figures/).
+5. LLM visualisation.ipynb: Generates figures, confusion matrices, class-level F1 distributions, and cost-accuracy trade-off graphs.
 
 6. vibe_coding_log.txt: A detailed development log recording the prompt-driven human-AI collaboration process and iterative troubleshooting.
 
@@ -35,7 +35,7 @@ To prevent crashes during large-scale evaluation runs, launch Jupyter with an si
 Bash
 jupyter notebook --NotebookApp.iopub_msg_rate_limit=10000
 
-##Evaluation & Metrics
+## Evaluation & Metrics
 The pipeline automatically calculates and logs key classification metrics across all experiment conditions, including:
 
 1. Overall Accuracy
