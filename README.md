@@ -1,7 +1,7 @@
 # LLM Based Natural Language Inference NLI Project
-This repository contains the codebase, experimental logs, and final report for our Natural Language Inference (NLI) project. The system evaluates the logical relationship between premise and hypothesis sentences (Entailment, Contradiction, or Neutral) using the MultiNLI dataset.
+This repository developed an LLM-based inference pipeline to perform Natural Language Inference (NLI) tasks. The system evaluates the logical relationship between premise and hypothesis sentences (Entailment, Contradiction, or Neutral) using the MultiNLI dataset.
 
-We explored standalone Large Language Model prompting strategies (Zero-Shot, Few-Shot, Chain-of-Thought) using Gemini 2.0 Flash, and developed a cost-efficient Hybrid Routing Pipeline that combines local Cross-Encoders with LLM fallbacks.
+We explored standalone Large Language Model prompting strategies (Zero-Shot, Few-Shot, Chain-of-Thought) using Gemini 2.0 Flash, and developed a cost-efficient Hybrid Routing Pipeline that combines local Cross-Encoders with LLM fallbacks. Performance evaluated via standard classification benchmark
 
 ## Repository Structure
 The project is structured sequentially across several Jupyter Notebooks, supported by visualisation script, development log, dataset, and exported result tables:
