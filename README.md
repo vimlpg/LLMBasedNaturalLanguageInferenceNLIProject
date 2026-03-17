@@ -9,7 +9,9 @@ The project is structured sequentially across several Jupyter Notebooks, support
 - `multinli_1.0_dev_matched.jsonl`: The raw MultiNLI dataset containing the premise-hypothesis pairs used for evaluating the models.
 
 - `nli_comparison.xlsx`: A comprehensive spreadsheet containing all experimental results, including overall metrics (Accuracy, Macro-F1, API Costs), per-class breakdowns, error analysis, and threshold selection data.
-   
+
+- `vibe_coding_log.txt`: A detailed vibe coding log recording the chat between human and AI collaboration process.
+
 - `1. Pure LLM.ipynb`: Establishes the baseline. Evaluates Gemini 2.0 Flash across Zero-Shot, Few-Shot, and Chain-of-Thought (CoT) prompting strategies.
 
 - `2. Hybrid Model.ipynb`: Implements a hybrid routing pipeline. Samples are first passed through a local Cross-Encoder (cross-encoder/nli-distilroberta-base). Low-confidence predictions fall back to Gemini 2.0 Flash.
@@ -19,8 +21,6 @@ The project is structured sequentially across several Jupyter Notebooks, support
 - `4. Threshold Test.ipynb`: Analyses Cross-Encoder confidence distributions to justify the optimal fallback threshold used in the hybrid pipeline.
 
 - `LLM visualisation.ipynb`: Generates figures, confusion matrices, class-level F1 distributions, and cost-accuracy trade-off graphs.
-
-- `vibe_coding_log.txt`: A detailed vibe coding log recording the chat between human and AI collaboration process.
 
 ## Prerequisites
 
