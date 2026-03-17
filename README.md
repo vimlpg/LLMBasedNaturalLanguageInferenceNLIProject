@@ -20,8 +20,9 @@ To run these notebooks, you will need Python 3.8+ and an active internet connect
 
 The LLM inference scripts require an API key for Gemini 2.0 Flash. Set your API key in your environment before launching Jupyter:
 
-Bash
+```bash
 export GEMINI_API_KEY="your_api_key_here"
+```
 
 ## Running the Code
 The notebooks are designed to be executed sequentially (1 through 4, followed by visualizations).
@@ -32,8 +33,9 @@ As noted in our vibe_coding_log.txt, running inference on the full dataset gener
 
 To prevent crashes during large-scale evaluation runs, launch Jupyter with an significantly increased message rate limit:
 
-Bash
+```bash
 jupyter notebook --NotebookApp.iopub_msg_rate_limit=10000
+```
 
 ## Evaluation & Metrics
 The pipeline automatically calculates and logs key classification metrics across all experiment conditions, including:
