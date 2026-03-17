@@ -1,9 +1,14 @@
 # LLM Based Natural Language Inference NLI Project
+This repository contains the codebase, experimental logs, and final report for our Natural Language Inference (NLI) project. The system evaluates the logical relationship between premise and hypothesis sentences (Entailment, Contradiction, or Neutral) using the MultiNLI dataset.
+
+We explored standalone Large Language Model prompting strategies (Zero-Shot, Few-Shot, Chain-of-Thought) using Gemini 2.0 Flash, and developed a cost-efficient Hybrid Routing Pipeline that combines local Cross-Encoders with LLM fallbacks.
 
 ## Repository Structure
-The project is broken down into sequential Jupyter Notebooks and documentation:
+The project is structured sequentially across several Jupyter Notebooks, supported by visualisation script, development log, dataset, and exported result tables:
 
 - `multinli_1.0_dev_matched.jsonl`: The raw MultiNLI dataset containing the premise-hypothesis pairs used for evaluating the models.
+
+- `nli_comparison.xlsx`: A comprehensive spreadsheet containing all experimental results, including overall metrics (Accuracy, Macro-F1, API Costs), per-class breakdowns, error analysis, and threshold selection data.
    
 - `1. Pure LLM.ipynb`: Establishes the baseline. Evaluates Gemini 2.0 Flash across Zero-Shot, Few-Shot, and Chain-of-Thought (CoT) prompting strategies.
 
@@ -33,9 +38,6 @@ for the local Cross-Encoder model.
 pip install sentence-transformers
 from sentence_transformers import CrossEncoder
 ```
-
-## Running the Code
-The notebooks are designed to be executed sequentially (1 through 4, followed by visualisations).
 
 ## Evaluation & Metrics
 The pipeline automatically calculates and logs key classification metrics across all experiment conditions, including:
