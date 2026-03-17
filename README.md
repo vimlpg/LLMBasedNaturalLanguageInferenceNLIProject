@@ -1,4 +1,4 @@
-# LLM-Based-Natural-Language-Inference-NLI-Project
+# LLM Based Natural Language Inference NLI Project
 
 ## Repository Structure
 The project is broken down into sequential Jupyter Notebooks and documentation:
