@@ -20,7 +20,7 @@ The project is broken down into sequential Jupyter Notebooks and documentation:
 The LLM inference scripts require an API key for Gemini 2.0 Flash.
 
 ```bash
-export GEMINI_API_KEY="your_api_key_here"
+os.environ["GOOGLE_API_KEY"] = "Your API Key Here"
 ```
 
 ## Running the Code
